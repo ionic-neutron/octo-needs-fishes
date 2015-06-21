@@ -83,10 +83,10 @@ var game= new Phaser.Game(800,600,Phaser.AUTO, " ",{
     function update(){
             // move paddle
         if(cursor.left.isDown && paddle.game.world.x>=0){
-            paddle.body.velocity.x= -300;
+            paddle.body.velocity.x= -250;
         }
         else if(cursor.right.isDown){
-            paddle.body.velocity.x = 300;
+            paddle.body.velocity.x = 250;
         }
         else{
           paddle.body.velocity.x=0;
