@@ -18,19 +18,11 @@ var game= new Phaser.Game(800,600,Phaser.AUTO, " ",{
     var paddle;
     var ball;
     var cursor;
-    var bricks
+    var bricks;
     var scoreText;
     var score=0;
     var bar;
     var gameOverText;
-
-//to make a game over function i suggest making a hidden sprite beneath the paddle, and when the ball collides with it, game over
-// to stop game game.destroy()
-// and to check if the ball is out of bounds you can do If(ball.x >= game.y){ lives=lives-1;}
-// sprite.destroy() // destroy full process like game over function 
-//sprite.kill()
-// game.gamePaushed()
-
 
     function create(){
         game.physics.startSystem(Phaser.Physics.ARCADE);
